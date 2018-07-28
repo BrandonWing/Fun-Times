@@ -1,0 +1,61 @@
+html, body {
+    height:100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#head {
+    position: relative;
+    left:45%;
+    top:30%;
+    height:300px;
+    width:300px;
+    border-radius: 50%;
+    background-color: yellow;
+    border:5px solid black;
+}
+
+.eye {
+    position: relative;
+    width:70px;
+    height:40px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 10px solid black;
+    border-bottom: 0;
+    top:25%;
+    left:25%;
+    display: inline-block;
+}
+
+#rightEye{
+    left:35%;
+}
+
+#smile {
+    width:190px;
+    height:100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: darkred;
+    position: relative;
+    overflow: hidden;
+    top:35%;
+    left:25%;
+    border:5px solid black;
+}
+
+#tongue {
+    height:250px;
+    width:250px;
+    background-color: pink;
+    position: relative;
+    border-radius: 50%;
+    right:20%;
+    top:10%;
+    border: 3px solid black;
+
+}

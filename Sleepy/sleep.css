@@ -1,0 +1,63 @@
+@keyframes fadeIn {
+    from {color:black;}
+    to {color:rgb(236, 236, 236);}
+}
+
+@keyframes dropDown {
+    from{top:-100px; color:black;}
+    to {top:0px;color:rgb(236, 236, 236);}
+}
+
+@keyFrames comeUp {
+    from{top:100px; color:black}
+    to {top:0px; color: rgb(236, 236, 236);}
+}
+
+
+body,html {
+    margin:0;
+    padding:0;
+    height: 100%;
+    width:100%;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+#clouds{
+    position: relative;
+    top: 17%;
+}
+#text {
+    font-family: 'Quattrocento', serif;
+    font-size: 30px;
+    position: relative;
+    top:17%;
+
+}
+
+
+#firstLine{
+    animation-name: fadeIn;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#secondLine {
+    position: relative;
+    animation-name: dropDown;
+    animation-delay: 3.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#thirdLine {
+    position: relative;
+    animation-name: comeUp;
+    animation-delay: 6s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}

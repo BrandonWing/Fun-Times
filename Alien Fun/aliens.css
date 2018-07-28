@@ -1,0 +1,35 @@
+body, html {
+    height:100%;
+    width:100%;
+}
+
+body{
+    overflow: hidden;
+    background-image: url(galaxy.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#title{
+    font-family: 'Bungee Shade', cursive;
+    color:white;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+#title h1 {
+    font-size:150px;
+    transform: skewY(20deg);
+}
+
+#lmao{
+    position: absolute;
+    bottom:-5%;
+    left:0;
+    height:500px;
+    transform:rotate(-10deg);
+    opacity: 0.7;
+}
