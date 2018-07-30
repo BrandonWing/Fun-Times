@@ -1,0 +1,100 @@
+@keyframes firstAnimation{
+    from{height:0px; width:0px;}
+    to{height: 40%; width:30%;}
+}
+
+@keyframes secondAnimation{
+    from{height:0px; width:0px;}
+    to{height: 20%;width: 45%;}
+}
+
+@keyframes thirdAnimation{
+    from{height:0px; width:0px;}
+    to{height: 30%;width: 30%;}
+}
+
+@keyframes sparkling{
+    from{height:0px;top:200px;left:250px;}
+    to{height:100px;transform: rotateX(20deg)}
+}
+
+html, body {
+    margin:0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+#container {
+    padding: 0;
+    margin: 0;
+    display:inline-block;
+    position: relative;
+    background-image: url('hackerman.jpg');
+    height:900px;
+    width: 700px;
+    border:20px solid #b46046;
+}
+
+#sparkle {
+    position: absolute;
+    height:100px;
+    top:150px;
+    left:200px;
+    animation-name: sparkling;
+    animation-duration: .5s;
+    animation-direction: alternate;
+}
+.window {
+    position: absolute;
+    visibility: hidden;
+    text-align: left;
+}
+
+
+
+#firstSquare{
+    visibility: visible;
+    height: 40%;
+    width: 30%;
+    top:20px;
+    left:40px;
+    border: 2px solid #c8d4c6;
+    animation-name:firstAnimation;
+    animation-duration: 1s;
+}
+#secondSquare{
+    visibility: visible;
+    height: 20%;
+    width: 45%;
+    bottom:150px;
+    right:140px;
+    border: 2px solid #c8d4c6;
+    animation-name:secondAnimation;
+    animation-duration: 1s;
+
+}
+
+#thirdSquare{
+    visibility: visible;
+    height: 30%;
+    width: 30%;
+    top:230px;
+    right:60px;
+    border: 2px solid #c8d4c6;
+    animation-name:thirdAnimation;
+    animation-duration: 1s;
+
+}
+
+
+#hackermanBorder{
+    height:110px;
+    width:675px;
+    border: 2px solid white;
+    top:86%;
+    left:10px;
+    transform:skew(-10deg);
+}
